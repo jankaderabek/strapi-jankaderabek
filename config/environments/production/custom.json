@@ -1,3 +1,5 @@
 {
-  "myCustomConfiguration": "This configuration is accessible through strapi.config.environments.production.myCustomConfiguration"
+  "myCustomConfiguration": "This configuration is accessible through strapi.config.environments.production.myCustomConfiguration",
+  "staticWebsiteBuildURL": "${process.env.STATIC_WEBSITE_BUILD_URL}",
+  "staticWebsiteBuildToken": "${process.env.STATIC_WEBSITE_BUILD_TOKEN}"
 }
