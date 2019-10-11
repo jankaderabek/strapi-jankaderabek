@@ -7,7 +7,7 @@ const axios = require('axios');
  */
 
 module.exports = {
-  buildStaticWebsite: async () => {
+  buildStaticWebsite: () => {
     axios
       .post(strapi.config.currentEnvironment.staticWebsiteBuildURL, {'event_type': 'deploy'}, {
         headers: {
