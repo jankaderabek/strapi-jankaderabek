@@ -5,13 +5,13 @@
  */
 
 module.exports = {
-  afterCreate: entry => {
-    strapi.services.frontend.buildStaticWebsite();
+  afterCreate: async entry => {
+    await strapi.services.frontend.buildStaticWebsite();
   },
-  afterUpdate: entry => {
-    strapi.services.frontend.buildStaticWebsite();
+  afterUpdate: async entry => {
+    await strapi.services.frontend.buildStaticWebsite();
   },
-  afterDestroy: entry => {
-    strapi.services.frontend.buildStaticWebsite();
+  afterDestroy: async entry => {
+    await strapi.services.frontend.buildStaticWebsite();
   },
 };
