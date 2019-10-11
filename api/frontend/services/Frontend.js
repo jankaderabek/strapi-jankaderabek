@@ -12,7 +12,7 @@ module.exports = {
       .post(strapi.config.currentEnvironment.staticWebsiteBuildURL, {'event_type': 'deploy'}, {
         headers: {
           Accept: 'application/vnd.github.everest-preview+json',
-          Authorization: `token ${strapi.config.currentEnvironment.staticWebsiteBuildURL}`
+          Authorization: `token ${strapi.config.currentEnvironment.staticWebsiteBuildToken}`
         }
       })
       .catch(() => {
